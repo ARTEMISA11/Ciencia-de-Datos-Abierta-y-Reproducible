@@ -1,12 +1,32 @@
 # Ciencia de datos abierta y reproducible
+
 **Problema fisico: grafica de indice de color vs redshift y analisis de distribucion de galaxias**
 
 ![Resultado del Análisis](resultado.png)
 
-Al analizar la gráfica generada a partir de los datos del SDSS DR18, se observa una clara separación entre las dos poblaciones estudiadas basándonos en su corrimiento al rojo (Redshift, $z$) y su índice de color fotométrico ($g-r$):
+## Análisis Físico: Índice de Color vs Redshift
 
-1. **Galaxias Locales:** Se concentran en valores de Redshift muy bajos (z cercano a 0). Esto se debe a que las galaxias que podemos detectar con la profundidad del SDSS están relativamente cerca en términos cosmológicos. Su índice de color ($g-r$) muestra una dispersión que refleja las diferentes poblaciones estelares que las componen (galaxias rojas pasivas y galaxias azules con formación estelar).
-2. **Quásares Primordiales (QSO):** Se extienden a lo largo de un rango de Redshift muchísimo más amplio y lejano (z > 1). Debido a que los Quásares son núcleos galácticos activos (AGN) extremadamente luminosos, podemos observarlos cuando el universo era mucho más joven. Su color se comporta de manera distinta a lo largo del Redshift debido a las fuertes líneas de emisión que entran y salen de los filtros fotométricos $g$ y $r$ a medida que se expande el universo.
+Este gráfico es una excelente representación de cómo la astronomía utiliza la fotometría para distinguir entre diferentes tipos de objetos celestes a distancias cosmológicas. El eje horizontal muestra el Redshift ($z$), que mide qué tan rápido se aleja un objeto, mientras que el eje vertical muestra el Índice de Color ($g-r$), la diferencia de magnitud entre los filtros verde y rojo.
 
-En conclusión, el Redshift actúa como un excelente discriminador de distancia cósmica, confirmando que mientras las galaxias regulares que observamos pertenecen a nuestro vecindario cósmico local, los Quásares representan estructuras del universo primordial y profundo.
+### 1. Galaxias Locales (Naranja)
+Las galaxias se concentran mayoritariamente en la parte izquierda del gráfico, con un $z < 1$. Forman un "bulbo" denso porque son objetos extendidos que se vuelven muy difíciles de detectar a medida que el redshift aumenta. La amplia dispersión vertical cerca de $z \approx 0.5$ (la "panza") representa la variedad de poblaciones estelares y el efecto de la Corrección-K al cambiar las líneas de emisión de filtro.
+
+### 2. Quásares Primordiales (Azul claro)
+Los Quásares (QSO) dominan a partir de $z > 1$ y se extienden hasta $z \approx 7$. Al ser núcleos galácticos activos extremadamente brillantes, podemos verlos a distancias donde una galaxia normal sería invisible. Es notable cómo su color se mantiene relativamente azul ($g-r \approx 0$) hasta $z \approx 3.5$, donde se vuelve más rojo debido a que el bosque Lyman-$\alpha$ (absorción de hidrógeno intergaláctico) entra en los filtros de observación.
+
+### Comparativa: Galaxias vs. Quásares
+| Característica | Galaxias (GALAXY) | Quásares (QSO) |
+| :--- | :--- | :--- |
+| **Rango de Redshift** | Mayormente $0 < z < 1.0$ | Amplio, desde $0$ hasta $7.0$ |
+| **Color dominante** | Más "rojas" ($g-r > 0$) | Más "azules" en $z$ bajo |
+| **Interpretación** | Población local del universo | Faros distantes del universo temprano |
+
+### Análisis de Valores Atípicos (Outliers)
+* **Los "Súper Rojos" ($g-r > 10$):** En muchos casos no es un color real, sino ruido o errores de medición cuando el objeto es casi invisible en el filtro $g$.
+* **El Quásar solitario en $z \approx 4$ ($g-r \approx 12$):** A este redshift, la absorción del hidrógeno es tan fuerte que "borra" la luz en el filtro $g$, haciendo que parezca extremadamente rojo para el sensor aunque intrínsecamente sea azul.
+
+### Conclusión
+El hecho de que los quásares lleguen hasta $z=7$ indica que observamos objetos de cuando el universo era una fracción de lo que es hoy. La clara separación demuestra que el Índice de Color es una herramienta de diagnóstico poderosa para clasificar estructuras cosmológicas.
+
+
 
