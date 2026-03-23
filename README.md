@@ -1,3 +1,11 @@
+# Ciencia de datos abierta y reproducible
+
+**Problema físico: gráfica de índice de color vs redshift y análisis de distribución de galaxias**
+
+![Resultado del Análisis](resultado.png)
+
+El eje horizontal muestra el Redshift (z), el cual mide qué tan rápido se aleja un objeto, mientras que el eje vertical muestra el Índice de Color (g-r), la diferencia de magnitud entre los filtros verde y rojo.
+
 ### Galaxias Locales (Naranja)
 Las galaxias se concentran mayoritariamente en la parte izquierda del gráfico a un z < 1. Forman un grupo denso porque son objetos extendidos que se vuelven muy difíciles de detectar a medida que el redshift aumenta. La amplia dispersión vertical cerca de z = 0.5 representa la variedad de poblaciones estelares y el efecto de la Corrección-K. Como el universo se está expandiendo, la luz de la galaxia se "estira" en su camino hacia la Tierra. Esto hace que una luz que originalmente salió siendo azul o verde, se estire tanto que termine entrando por el filtro rojo en el telescopio, alterando el color que calculamos.
 
