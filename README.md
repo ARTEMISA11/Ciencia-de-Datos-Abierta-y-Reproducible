@@ -1,5 +1,5 @@
 # Ciencia de datos abierta y reproducible
-**Problema fisico: grafica de indice de color vs redshift y analisis de distribucion de galaxias
+**Problema fisico: grafica de indice de color vs redshift y analisis de distribucion de galaxias**
 
 ![Resultado del Análisis](resultado.png)
 
