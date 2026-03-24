@@ -6,11 +6,11 @@ wget -q -O datos_sdss.csv "$URL"
 echo = "Catalogo SDSS DR18 descargado" 
 head -n 5 datos_sdss.csv
 
-echo = "Crea base de datos"
+echo = "Creando base de datos"
 python3 constructor_db.py
 
-echo = "Generanod analsiis"
-python3 analisis_virtual.py
+echo = "Generando analisis"
+python3 analisis_visual.py
 
 
 
