@@ -11,7 +11,7 @@ python3 constructor_db.py
 
 echo = "Generando analisis"
 python3 analisis_visual.py
-cat README.md
+sed -e 's/#//g' -e 's/\*\*//g' -e '/!\[.*\](.*)/d' README.md
 
 echo = "Imagen"
 open resultado.png
